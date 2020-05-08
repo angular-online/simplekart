@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://simplekart-api-prod.herokuapp.com'
+  baseUrl: 'http://localhost:4000'
 };
 
 /*

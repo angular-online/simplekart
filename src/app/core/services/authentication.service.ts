@@ -46,8 +46,6 @@ export class AuthenticationService {
           if (data && data.token) {
             localStorage.setItem('token', data.token);
             this.token = data.token;
-            delete data.user.password;
-            delete data.user.email;
             localStorage.setItem('currentUser', JSON.stringify(data.user));
             this.currentUser = data.user;
             this.authenticationSubject.next({
